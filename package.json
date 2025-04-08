@@ -1,0 +1,22 @@
+{
+  "name": "cms-turbo-nextjs",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "start": "turbo start",
+    "generate:types": "turbo generate:types",
+    "generate:importmap": "turbo generate:importmap",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@10.6.5",
+  "engines": {
+    "node": ">=18"
+  }
+}

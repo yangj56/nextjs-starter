@@ -1,0 +1,47 @@
+{
+    "name": "cms",
+    "version": "1.0.0",
+    "description": "A blank template to get started with Payload 3.0",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
+        "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
+        "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
+        "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
+        "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types && cp src/payload-types.ts ../web/lib/payload-types.ts",
+        "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+        "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+        "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
+    },
+    "dependencies": {
+        "@payloadcms/db-mongodb": "3.9.0",
+        "@payloadcms/next": "3.9.0",
+        "@payloadcms/payload-cloud": "3.9.0",
+        "@payloadcms/richtext-lexical": "3.9.0",
+        "@payloadcms/storage-s3": "3.9.0",
+        "class-variance-authority": "^0.7.1",
+        "clsx": "^2.1.1",
+        "cross-env": "^7.0.3",
+        "graphql": "^16.8.1",
+        "next": "^15.1.0",
+        "payload": "3.9.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "sharp": "0.32.6",
+        "tailwind-merge": "^3.0.2",
+        "tailwindcss-animate": "^1.0.7",
+        "tw-animate-css": "^1.2.4"
+    },
+    "devDependencies": {
+        "@repo/eslint-config": "workspace:*",
+        "@repo/typescript-config": "workspace:*",
+        "@tailwindcss/typography": "^0.5.15",
+        "@types/node": "^22.10.3",
+        "@types/react": "^19.0.2",
+        "@types/react-dom": "^19.0.2",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.0.15"
+    }
+}

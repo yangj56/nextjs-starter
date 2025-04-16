@@ -18,8 +18,7 @@
       "persistent": true
     },
     "clean": {
-      "cache": false,
-      "persistent": true
+      "cache": false
     },
     "start": {
       "cache": false,

@@ -5,6 +5,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "start": "turbo start",
+    "clean": "turbo clean && rm -rf package-lock.json && rm -rf .turbo && rm -rf node_modules && rm -rf .next",
     "generate:types": "turbo generate:types",
     "generate:importmap": "turbo generate:importmap",
     "lint": "turbo lint",

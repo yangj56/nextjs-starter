@@ -9,7 +9,8 @@
         "build": "next build",
         "start": "next start -p 3001",
         "lint": "next lint --max-warnings 0",
-        "check-types": "tsc --noEmit"
+        "check-types": "tsc --noEmit",
+        "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
     },
     "dependencies": {
         "@radix-ui/react-dialog": "^1.1.6",

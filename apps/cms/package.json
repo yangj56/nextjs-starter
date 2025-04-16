@@ -12,7 +12,8 @@
         "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types && cp src/payload-types.ts ../web/lib/payload-types.ts",
         "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
         "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
-        "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
+        "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
+        "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
     },
     "dependencies": {
         "@payloadcms/db-mongodb": "3.9.0",
